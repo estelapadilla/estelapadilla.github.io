@@ -1,0 +1,152 @@
+<html>
+
+<head>
+<title>All About Stel</title>
+<link rel="stylesheet" href="styles.css">
+<script src="teet.js"></script>
+</head>
+</body>
+</html>
+<html>
+  <head>
+    <title>date and time.</title>
+    <script type="text/javascript">
+      function getDate(){
+        var cDate=new Date();
+        document.getElementById("Date").innerHTML = cDate.toString();
+      }
+    </script>
+  </head>
+<body onLoad='getDate()' style="text-align: center">
+    <h1>current date and time:</h1>
+    
+    <h2 id="Date"></h2>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+<h1</h1>
+<script>
+setInterval(
+function () {
+  var randomColor = Math.floor(Math.random()*16777215).toString(16);
+  document.body.style.backgroundColor = "#"+randomColor;
+},1000);
+</script>
+</body>
+</html>
+<body>
+  <progress value="0" max="10" id="pbar" ></progress><p id="counting">10</p>
+  <button id="start" onclick="start_countdown()">Start CountDown</button>
+  <script type="text/javascript">
+    function start_countdown(){
+    var reverse_counter = 10;
+var downloadTimer = setInterval(function(){
+  document.getElementById("pbar").value = 10 - --reverse_counter;
+  if(reverse_counter <= 0)
+    clearInterval(downloadTimer);
+  
+  document.getElementById("counting").innerHTML= reverse_counter;
+  
+},1000);
+}
+    
+  </script>
+</body>
+</html>
+<body>
+<h1>all about stels</h1>
+<p></p>
+<h3>check out these fun facts yo</h3>
+<ul>
+<li> my name is stela and i'm 17 years old. i have a doggo named otis. <br>
+hes a sweet doggo. my bestfriend is cass, we have been friends since middle school.<br>
+some of my favorite things to do would be playing sports such as soccer and track.my favorite food would be peruvian and kbbq.<br>
+ </li>
+<h3>my background</h3>
+<li> i am peruvian (shoutout to my fellow peruvians).i embrace my <br>
+my hispanic culture a lot because it represents/defines the person i am.</li>
+<h3>favorite bops</h3>
+<li>some of my favorite bops would include four seasons - rex orange county, in my head- ariana grande, and baby i'm yours- artic monkeys 
+<a>
+
+</body>
+
+</html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-family: cursive;
+}
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+.column img {
+  opacity: 0.8; 
+  cursor: pointer; 
+}
+.column img:hover {
+  opacity: 1;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.container {
+  position: relative;
+  display: none;
+}
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+</style
+<div style="text-align:center">
+  <h2>image gallery</h2>
+  <p>:</p>
+</div>
+<div class="row">
+  <div class="column">
+    <img src="pp.jpeg" alt="peruvian flag" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="stels.jpeg" alt="me and papa" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="otis.jpeg" alt="otis" style="width:100%" onclick="myFunction(this);">
+  </div>
+</div>
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:100%">
+  <div id="imgtext"></div>
+</div>
+<script>
+function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
+}
+</script>
